@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Bopimo Profile Link",
+  "version": "1.0",
+  "description": "Adds a profile link to bopimo.com navigation.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.bopimo.com/*", "*://bopimo.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
